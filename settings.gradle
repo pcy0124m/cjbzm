@@ -7,12 +7,9 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.设置(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    // repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
     }
 }
-rootProject.名称 = "CarFloatPanel"
-包含(":app")
