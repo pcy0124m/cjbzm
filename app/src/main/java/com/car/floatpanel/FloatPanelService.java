@@ -71,8 +71,10 @@ public class FloatPanelService extends Service {
         aMap = mMapView.getMap();
         aMap.getUiSettings().setScaleControlsEnabled(false);
         aMap.setMapType(AMap.MAP_TYPE_NORMAL);
-        aMap.showBuildings(false);
-        aMap.showTraffic(false);
+         // 新版高德SDK使用下面方式控制建筑物、路况
+         aMap.setBuildingsEnabled(false);
+         aMap.setTrafficEnabled(false);
+
         appSelectHelper = new AppSelectHelper(this);
         appConfigHelper = new AppConfigHelper(this);
         tpmsReader = new TpmsUsbReader(this, data -> tvTpms.post(() -> tvTpms.setText(data)));
