@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<资源>
-    <style name="Theme.Translucent" parent="android:Theme.NoTitleBar">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-    </样式>
-</资源>
+<resources>
+    <style name="Theme.Cjbzm" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>
+
+  
