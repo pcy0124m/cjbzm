@@ -13,3 +13,4 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+include(":app") // 新增这一行，告诉Gradle加载app模块
