@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#CC000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 左侧：播放器 + 胎压 -->
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="280dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_player"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:padding="8dp"
+                android:background="#224488">
+                <TextView
+                    android:id="@+id/tv_music_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="播放器"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_tpms"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:padding="8dp"
+                android:background="#228844">
+                <TextView
+                    android:id="@+id/tv_tpms_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="胎压：--"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 中间：高德地图 -->
+        <com.amap.api.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="340dp"
+            android:layout_height="280dp" />
+
+        <!-- 右侧：7 个快捷按钮 -->
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <LinearLayout android:id="@+id/shortcut_0" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:background="#333333">
+                <ImageView android:id="@+id/icon_0" android:layout_width="36dp" android:layout_height="36dp" />
+                <TextView android:id="@+id/label_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快捷1" android:textColor="#FFFFFF" android:textSize="9sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/shortcut_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:background="#333333">
+                <ImageView android:id="@+id/icon_1" android:layout_width="36dp" android:layout_height="36dp" />
+                <TextView android:id="@+id/label_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快捷2" android:textColor="#FFFFFF" android:textSize="9sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/shortcut_2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:background="#333333">
+                <ImageView android:id="@+id/icon_2" android:layout_width="36dp" android:layout_height="36dp" />
+                <TextView android:id="@+id/label_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快捷3" android:textColor="#FFFFFF" android:textSize="9sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/shortcut_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:background="#333333">
+                <ImageView android:id="@+id/icon_3" android:layout_width="36dp" android:layout_height="36dp" />
+                <TextView android:id="@+id/label_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快捷4" android:textColor="#FFFFFF" android:textSize="9sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/shortcut_4" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:background="#333333">
+                <ImageView android:id="@+id/icon_4" android:layout_width="36dp" android:layout_height="36dp" />
+                <TextView android:id="@+id/label_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快捷5" android:textColor="#FFFFFF" android:textSize="9sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/shortcut_5" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:background="#333333">
+                <ImageView android:id="@+id/icon_5" android:layout_width="36dp" android:layout_height="36dp" />
+                <TextView android:id="@+id/label_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快捷6" android:textColor="#FFFFFF" android:textSize="9sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/shortcut_6" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:background="#333333">
+                <ImageView android:id="@+id/icon_6" android:layout_width="36dp" android:layout_height="36dp" />
+                <TextView android:id="@+id/label_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快捷7" android:textColor="#FFFFFF" android:textSize="9sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 底部控制栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="#CC222222">
+
+        <Button
+            android:id="@+id/btn_zoom_minus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="缩小"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_zoom_plus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="放大"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关闭"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>
