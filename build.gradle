@@ -1,0 +1,4 @@
+// 顶级构建文件
+插件 {
+    id 'com.android.application' 版本 '8.1.4' 应用 false
+}
