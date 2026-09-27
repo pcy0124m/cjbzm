@@ -72,7 +72,7 @@ public class FloatPanelService extends Service {
         aMap.getUiSettings().setScaleControlsEnabled(false);
         aMap.setMapType(AMap.MAP_TYPE_NORMAL);
          // 新版高德SDK使用下面方式控制建筑物、路况
-         aMap.setBuildingsEnabled(false);
+         // aMap.setBuildingsEnabled(false);
          aMap.setTrafficEnabled(false);
 
         appSelectHelper = new AppSelectHelper(this);
