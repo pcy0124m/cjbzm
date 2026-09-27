@@ -3,7 +3,6 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
-        maven { url 'https://jitpack.io' }
     }
 }
 dependencyResolutionManagement {
@@ -11,6 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' } // ✅ JitPack放到这里，加载第三方依赖
     }
 }
-include(":app") // 新增这一行，告诉Gradle加载app模块
+include(":app")
+
