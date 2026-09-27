@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<资源>
+<resources>
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </样式>
-</资源>
+    </style>
+</resources>
