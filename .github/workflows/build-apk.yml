@@ -1,4 +1,6 @@
-name: Build APK
+- name: Build APK
+  run: gradle assembleDebug
+
 on:
   workflow_dispatch: # 仅手动触发，push不再自动编译
 
