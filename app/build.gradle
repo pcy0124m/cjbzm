@@ -20,6 +20,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.amap.api:maps:9.7.0'
+    implementation 'com.amap.api:3dmap:9.7.0' // ✅ 正确
+
     implementation 'com.github.felHR85:UsbSerial:6.1.0'
 }
