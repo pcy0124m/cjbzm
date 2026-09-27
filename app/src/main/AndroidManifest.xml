@@ -17,7 +17,12 @@
     <application
         android:allowBackup="false"
         android:hardwareAccelerated="true"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        android:theme="@style/Theme.Translucent">
+
+        <!--高德地图SDK Key，已填入你申请好的key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="2983a657bac27172d86855d05dd7ba65"/>
 
         <service
             android:name=".FloatPanelService"
@@ -35,12 +40,13 @@
         <!--USB权限广播接收器-->
         <接收器 android:name=".UsbPermissionReceiver" android:exported="false">
             <intent-filter>
-                <action android:name="com.android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
                 <action android:name="com.car.floatpanel.USB_PERMISSION"/>
             </intent-filter>
             <meta-data
                 android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
                 android:resource="@xml/usb_device_filter"/>
         </receiver>
-    </application>
-</manifest>
+
+    </应用>
+</清单>
