@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<资源>
-="应用名称"车载悬浮面板</字符串>
-</资源>
+<resources>
+    <string name="app_name">cjbzm</string>
+</resources>
