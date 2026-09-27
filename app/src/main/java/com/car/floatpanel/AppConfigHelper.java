@@ -1,6 +1,5 @@
-包 com.car.floatpanel;
-
-导入 android.content.Context;
+package com.car.floatpanel;
+import android.content.Context;
 import android.content.SharedPreferences;
 
 public class AppConfigHelper {
@@ -12,7 +11,7 @@ public class AppConfigHelper {
     }
 
     public void saveMusicApp(String pkg, String name) {
-        sp.编辑().putString("music_pkg", pkg).putString("music_name", name).apply();
+        sp.edit().putString("music_pkg", pkg).putString("music_name", name).apply();
     }
 
     public String[] getMusicApp() {
@@ -48,10 +47,10 @@ public class AppConfigHelper {
     }
 
     public void saveScale(float scale) {
-("window_scale", scale).应用(
+        sp.edit().putFloat("window_scale", scale).apply();
     }
 
     public float getScale() {
-        返回 sp.("window_scale", 1.0f);
+        return sp.getFloat("window_scale", 1.0f);
     }
 }
